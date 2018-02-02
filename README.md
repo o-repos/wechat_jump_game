@@ -1,9 +1,10 @@
 # 教你用 Python 来玩微信跳一跳
+[![GitHub stars](https://img.shields.io/github/stars/wangshub/wechat_jump_game.svg)](https://github.com/wangshub/wechat_jump_game/stargazers) [![GitHub forks](https://img.shields.io/github/forks/wangshub/wechat_jump_game.svg)](https://github.com/wangshub/wechat_jump_game/network) [![GitHub license](https://img.shields.io/github/license/wangshub/wechat_jump_game.svg)](https://github.com/wangshub/wechat_jump_game/blob/master/LICENSE)
 ## 游戏模式
 
 > 2017 年 12 月 28 日下午，微信发布了 6.6.1 版本，加入了「小游戏」功能，并提供了官方 DEMO「跳一跳」。这是一个 2.5D 插画风格的益智游戏，玩家可以通过按压屏幕时间的长短来控制这个「小人」跳跃的距离。分数越高，那么在好友排行榜更加靠前。通过 Python 脚本自动运行，让你轻松霸榜。
 
-![](https://github.com/wangshub/wechat_jump_game/blob/master/resource/image/jump.gif)
+![](./resource/image/jump.gif)
 
 可能刚开始上手的时候，因为时间距离之间的关系把握不恰当，只能跳出几个就掉到了台子下面。**如果能利用图像识别精确测量出起始和目标点之间测距离，就可以估计按压的时间来精确跳跃。**
 
@@ -28,29 +29,19 @@ adb shell input swipe x y x y time(ms)
 
 ## 使用教程
 
-相关软件工具安装，和使用步骤请参考 [Android 和 iOS 操作步骤](https://github.com/wangshub/wechat_jump_game/wiki/Android-%E5%92%8C-iOS-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4)
+- 方法 1：使用 app 进行一键操作。目前已适配 Win10 64位/macOS 平台 Android 一键操作，下载请移步 [STOP_jump](https://github.com/wangshub/wechat_jump_game/releases)
+
+- 方法 2：相关软件工具安装和使用步骤请参考 [Android 和 iOS 操作步骤](https://github.com/wangshub/wechat_jump_game/wiki/Android-%E5%92%8C-iOS-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4)
+
+## 版本说明
+
+- master 分支：稳定版本，已通过测试，且在 release 中存有对应 app
+- dev 分支：开发版本，包含一些较稳定的新功能，累计多个功能并测试通过后合并至 master 分支
+- 其他分支：功能开发 (feature) 或问题修复 (bugfix)，属于最新尝鲜版本，可能处于开发中的状态，基本完成后合并至 dev 分支
 
 ## FAQ
 
-> 请先查阅一下 issue 区，请按照 issue 模板正确提交问题
-
-1. 如果你手机的的 `config.json` 出错导致弹跳不准确，或者有更好的参数？
-    - 请在这里提交你的问题 [issues/62](https://github.com/wangshub/wechat_jump_game/issues/62)，或者将参数PR给我们并附上你的最高成绩。
-
-2. iOS 设备遇到问题怎么办？
-    - 请移步参考：[issues/99](https://github.com/wangshub/wechat_jump_game/issues/99) 和 [issues/4](https://github.com/wangshub/wechat_jump_game/issues/4)
-
-3. 如果你对环境安装和操作步骤不熟悉？
-    - [Android 和 iOS 操作步骤](https://github.com/wangshub/wechat_jump_game/wiki/Android-%E5%92%8C-iOS-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4)
-
-4. 如果你的分数被微信清零或者排名不显示？
-    - 注意不要刷太高分数，适当休息，参见 [issues/164](https://github.com/wangshub/wechat_jump_game/issues/164)
-
-5. 如果有找不到 `./autojump.png` 文件的错误？
-    - 请查阅 [issue/194](https://github.com/wangshub/wechat_jump_game/issues/194)
-
-6. 如果你在苦苦寻找视频教程？
-    - 参考一位 B 站 UP 主的视频教程 [【微信跳一跳】教你如何不用双手还能霸占排行榜第一名](https://www.bilibili.com/video/av17796840/?redirectFrom=h5)
+- 详见 [Wiki-FAQ](https://github.com/wangshub/wechat_jump_game/wiki/FAQ)
 
 ## 更新日志
 
@@ -65,4 +56,5 @@ adb shell input swipe x y x y time(ms)
 - 314659953 (1000人 已满)
 - 176740763 (500人 已满)
 - 89213434 (2000人 已满)
-- 64389940 (2000人)
+- 64389940 (2000人 已满)
+- 169273380 （2000人）
